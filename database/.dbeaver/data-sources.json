@@ -1,0 +1,36 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-193876467d9-56937dd31818c0bb": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "uhh",
+			"save-password": true,
+			"virtual-model-id": "sqlite_jdbc-19387631a87-4dfa49b7e39566b5",
+			"configuration": {
+				"database": "C:\\Chas\\c2\\Larm\\database\\uhh",
+				"url": "jdbc:sqlite:C:\\Chas\\c2\\Larm\\database\\uhh",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
