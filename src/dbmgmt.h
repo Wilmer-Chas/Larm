@@ -3,7 +3,7 @@
 #include <string>
 #include <sstream>
 
-class User 
+typedef class User 
 {
 public: 
     std::string name;
@@ -14,9 +14,22 @@ public:
     User(std::string name, std::string company, std::string safeword, int id, int pin) : name(name), company(company), safeword(safeword), id(id), pin(pin) {}
 
     void display() const {
-        std::cout << "ID:" << id << ", Name:" << name << "Company" << company << "safeword" << safeword << "pin" << pin;
+        std::cout << "ID: " << id << ", Name: " << name << " Company: " << company << " safeword: " << safeword << " pin: " << pin;
     }
-};
+
+    void createUser() {
+        std::cout << "Enter name: ";
+        std::cin >> name;
+        std::cout << "Enter company: ";
+        std::cin >> company;
+        std::cout << "Enter safeword: ";
+        std::cin >> safeword;
+        std::cout << "Enter ID: ";
+        std::cin >> id;
+        std::cout << "Enter PIN: ";
+        std::cin >> pin;
+    }
+} user;
 
 // dragon dragon ball macorini glato :O
 class DDBMGMT
@@ -110,9 +123,3 @@ public:
     }      
 };
 
-
-int main()
-{
-
-    return 0;
-}
