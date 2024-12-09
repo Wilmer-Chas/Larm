@@ -13,8 +13,9 @@ public:
     int pin;
     User(std::string name, std::string company, std::string safeword, int id, int pin) : name(name), company(company), safeword(safeword), id(id), pin(pin) {}
 
-    void display() const {
-        std::cout << "ID:" << id << ", Name:" << name << "Company" << company << "safeword" << safeword << "pin" << pin;
+    void display() const
+    {
+        std::cout << "ID: " << id << "\nName: " << name << "\nCompany: " << company << "\nSafeword: " << safeword << "\nPin: " << pin << "\n" << std::endl;
     }
 };
 
@@ -110,9 +111,15 @@ public:
     }      
 };
 
-
 int main()
 {
+    int choice;
+
+    std::cout << "-=====- MENU -=====-\n"
+              << "1. Choose database\n"
+              << "2. ";
+
+
 
     return 0;
 }
